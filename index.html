@@ -6,6 +6,10 @@
     <title>Document</title>
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -56,15 +60,15 @@
 
         <div class="serviços-container">
             <div class="serviços-box">
-                <i class='bx bxl-dailymotion'></i>
-                <h3>Motion</h3>
+                <i class="fi fi-brands-after-effects"></i>
+                <h3>After Efects</h3>
                 <p>
-                    Nossos serviços de Motion Design vão além da animação. Combinamos técnica e criatividade para criar vídeos promocionais, motion graphics e efeitos visuais que elevam a comunicação visual do seu projeto. Conte conosco para dar vida às suas ideias e impressionar seu público-alvo.</p>
+                    Sou designer especializado em flyers e banners, apaixonado por criar peças gráficas que encantem e comuniquem com eficácia. Transformo conceitos em arte visual impactante para promover marcas e eventos de forma inesquecível. Se busca designs únicos e cativantes, estou aqui para dar vida às suas ideias!</p>
                 <a href="https://wa.me/5599984489858?text=Gostaria+de+fazer+um+or%C3%A7amento%21" target="_blank" class="btn">Saiba Mais</a>
             </div>
 
             <div class="serviços-box">
-                <i class='bx bxs-paint'></i>
+                <i class="fi fi-rr-edit-alt"></i>
                 <h3>Flyer/Banner</h3>
                 <p>
                     Como um designer especializado em flyers e banners, minha paixão é criar peças gráficas que encantem e comuniquem efetivamente. Transformo conceitos em arte visual impactante, promovendo marcas e eventos de forma memorável. Contate-me para dar vida às suas ideias através de designs únicos e cativantes.</p>
@@ -103,23 +107,22 @@
         <!-- Sobre section design -->
 
 
-        <section class="sobre" id="sobre">
-            <div class="sobre-img">
-                <img src="images/!@Logo branca.png" alt="">
-            </div>
-            <h1>Você imagina e a gente cria</h1>
-            
-            <div class="sobre-content">
-                <div class="sobre-img">
-                    <img src="images/!@logo preta.png" alt="">
-                </div>
-
-                <a href="https://wa.me/5599984489858?text=Gostaria+de+fazer+um+or%C3%A7amento%21" target="_blank" class="btn"> Faça um Orçamento</a>
+        <section class="budget-section">
 
 
-            </div>
+            <h2>🔥 Faça um Orçamento!</h2>
+            <p>
+                Quer transformar sua ideia em algo único e impactante? Entre em contato e receba um orçamento personalizado!
+            </p>
+
+            <a href="mailto:seuemail@exemplo.com" class="cta-button">✉️ Solicitar Orçamento</a>
+            <p class="contact-info">
+                Ou fale direto pelo WhatsApp: <a href="https://wa.me/SEUNUMERO">Clique aqui</a>
+            </p>
+
 
         </section>
+
     <!-- portifolio section design -->
 
     <section class="portfolio" id="portfolio">
@@ -211,6 +214,22 @@
     </section>
 
 
+    <section class="partners-section">
+        <h2> Nossos Parceiros</h2>
+        <div class="partners-carousel">
+            <div class="partners-logos">
+                <img src="logo1.png" alt="Parceiro 1" class="partner-logo">
+                <img src="logo2.png" alt="Parceiro 2" class="partner-logo">
+                <img src="logo3.png" alt="Parceiro 3" class="partner-logo">
+                <img src="logo4.png" alt="Parceiro 4" class="partner-logo">
+                <img src="logo1.png" alt="Parceiro 1" class="partner-logo"> <!-- Logo duplicada para loop contínuo -->
+                <img src="logo2.png" alt="Parceiro 2" class="partner-logo">
+                <img src="logo3.png" alt="Parceiro 3" class="partner-logo">
+                <img src="logo4.png" alt="Parceiro 4" class="partner-logo">
+            </div>
+        </div>
+    </section>
+
     <!-- Footer desgin -->
     <footer class="footer">
         <div class="footer-text">
@@ -236,5 +255,17 @@
 
     <!-- custom js -->
     <script src="js/script.js"></script>
+
+    <script>
+        const carousel = document.querySelector('.partners-logos');
+        const logos = document.querySelectorAll('.partner-logo');
+        
+        // Clone as logos para criar um efeito de loop infinito
+        logos.forEach(logo => {
+            const clone = logo.cloneNode(true);
+            carousel.appendChild(clone);
+        });
+    </script>
+
 </body>
 </html>
