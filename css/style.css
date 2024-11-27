@@ -400,7 +400,7 @@ span{
 
  /* Seção de orçamento */
 .budget-section {
-    background: linear-gradient(135deg, #ff4c4c, #1a1a1a);
+    background: linear-gradient(135deg, var(--main-color), var(--bg-color));
     padding: 20px; 
     text-align: center;
     border-radius: 12px;
