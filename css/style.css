@@ -366,7 +366,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
  }
 
  .footer-text p {
@@ -506,7 +506,7 @@ span{
 
 /* Seção de parcerias */
 .partners-section {
-    background-color: #1a1a1a;
+    background-color: var(--second-bg-color);
     padding: 40px 20px;
     text-align: center;
     color: #fff;
